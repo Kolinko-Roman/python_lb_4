@@ -29,8 +29,7 @@ buttons = [
  
 for r, row in enumerate(buttons, 1):     
     for c, symbol in enumerate(row):         
-        btn = tk.Button(root, text=symbol, font=("Arial", 20), command=lambda s=symbol: 
-        on_button_click(s), width=5, height=2)         
+        btn = tk.Button(root, text=symbol, font=("Arial", 20), command=lambda s=symbol: on_button_click(s), width=5, height=2)         
         btn.grid(row=r, column=c, padx=5, pady=5) 
  
 root.mainloop() 
